@@ -23,4 +23,25 @@ def block(rows,columns):
 # Two rows and two columns
 block(3,3)
 # Four rows and four columns
+=======
+# We use the same function for all questions
+def print_border(columns):
+    for i in range(columns):
+        print ("+", "- " * 4,end ="")
+    print("+")
+def print_row(columns):
+    for i in range(4):
+        for j in range(columns):
+            print ('|'," "*8,end ="")
+        print ('|\n')
+
+def block(rows,columns):
+    for i in range(rows):
+        print_border(columns)
+        print_row(columns)
+    print_border(columns)
+# Two rows and two columns
+block(3,3)
+# Four rows and four columns
+>>>>>>> 70899d371d4aee8548849a4f7f9dc9444e0bc68f
 block(4,4)
